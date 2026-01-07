@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Signup form</title>
+    <script src="validate.js"></script>
+  </head>
+  <body>
+    <h1>Signup here!</h1>
+
+    <form action="success.html" onsubmit="return validate()">
+      <label>Username:</label>
+      <input type="text" id="username" /><br /><br />
+
+      <label>Password:</label>
+      <input type="password" id="pswd" /><br /><br />
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirm_pswd" /><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female <br /><br />
+
+      <label>Mobile No:</label>
+      <input type="text" id="mobile_no" /><br /><br />
+
+      <label>Email:</label>
+      <input type="text" id="email" /><br /><br />
+
+      <label>DOB:</label>
+      <input type="date" id="dob" /><br /><br />
+
+      <label>Address:</label>
+      <textarea id="address"></textarea><br /><br />
+
+      <label>Qualification:</label>
+      <select id="qualification">
+        <option value="">Select</option>
+        <option>B.Tech</option>
+        <option>MCA</option>
+        <option>MBA</option></select
+      ><br /><br />
+
+      <!-- SKILLS DROPDOWN -->
+      <label>Skills:</label>
+      <select id="skills">
+        <option value="">Select</option>
+        <option>Java</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+      </select>
+      <br /><br />
+
+      <!-- PREFERRED SHIFT -->
+      <label>Preferred Shift:</label>
+      <input type="checkbox" name="shift" value="Day" /> Day
+      <input type="checkbox" name="shift" value="Night" /> Night
+      <input type="checkbox" name="shift" value="Both" /> Day/Night <br /><br />
+
+      <label>Upload Resume:</label>
+      <input type="file" id="resume" /><br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

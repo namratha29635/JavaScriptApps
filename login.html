@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <script src="validate.js"></script>
+  </head>
+  <body>
+    <h1>Login form</h1>
+    <form action="success.html" onsubmit="return validate()">
+      <label
+        >Username: <input type="text" name="username" id="username"
+      /></label>
+      <br />
+      <br />
+      <label
+        >Password: <input type="password" name="password" id="pswd"
+      /></label>
+      <br />
+      <br />
+      <input type="submit" value="login" />
+    </form>
+  </body>
+</html>
